@@ -19,6 +19,7 @@ export function createServer() {
   });
 
   app.get("/api/demo", handleDemo);
+  app.post("/api/attom/property", attomLookup);
 
   return app;
 }
