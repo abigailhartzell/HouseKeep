@@ -14,7 +14,9 @@ export default function NavBar() {
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <span className="inline-block h-3 w-3 rounded-sm bg-emerald-500" />
-          <span className="font-extrabold tracking-tight text-lg">HouseKeep</span>
+          <span className="font-extrabold tracking-tight text-lg">
+            HouseKeep
+          </span>
         </Link>
         <nav className="hidden md:flex items-center gap-1">
           <NavLink to="/" className={linkClass} end>

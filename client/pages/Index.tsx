@@ -14,7 +14,9 @@ export default function Index() {
               Home safety and prevention, made simple
             </h1>
             <p className="mt-4 text-lg text-muted-foreground max-w-prose">
-              HouseKeep helps you track the safety actions you’ve taken and gently reminds you about upcoming prevention tasks. Minimal, modern, and sustainably designed.
+              HouseKeep helps you track the safety actions you’ve taken and
+              gently reminds you about upcoming prevention tasks. Minimal,
+              modern, and sustainably designed.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button asChild size="lg">
@@ -26,15 +28,21 @@ export default function Index() {
             </div>
             <div className="mt-8 grid grid-cols-3 gap-4 text-sm text-muted-foreground">
               <div>
-                <span className="block text-2xl font-bold text-emerald-600">Sustainable</span>
+                <span className="block text-2xl font-bold text-emerald-600">
+                  Sustainable
+                </span>
                 Low-contrast, energy-friendly theme
               </div>
               <div>
-                <span className="block text-2xl font-bold text-emerald-600">Private</span>
+                <span className="block text-2xl font-bold text-emerald-600">
+                  Private
+                </span>
                 Your data stays with you
               </div>
               <div>
-                <span className="block text-2xl font-bold text-emerald-600">Helpful</span>
+                <span className="block text-2xl font-bold text-emerald-600">
+                  Helpful
+                </span>
                 Smart reminders for your home
               </div>
             </div>
@@ -43,7 +51,9 @@ export default function Index() {
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold">About HouseKeep</h3>
               <p className="mt-2 text-muted-foreground">
-                This app is your companion for a safer home. Track what you’ve done—like testing smoke alarms, cleaning dryer vents, replacing filters—and get reminded when it’s time again.
+                This app is your companion for a safer home. Track what you’ve
+                done—like testing smoke alarms, cleaning dryer vents, replacing
+                filters—and get reminded when it’s time again.
               </p>
               <Separator className="my-6" />
               <ul className="space-y-3">
@@ -71,17 +81,25 @@ export default function Index() {
           <div>
             <div className="text-emerald-600 font-semibold">Step 1</div>
             <h3 className="text-xl font-semibold mt-1">Create your profile</h3>
-            <p className="mt-2 text-muted-foreground">Tell us about your home and how you want notifications.</p>
+            <p className="mt-2 text-muted-foreground">
+              Tell us about your home and how you want notifications.
+            </p>
           </div>
           <div>
             <div className="text-emerald-600 font-semibold">Step 2</div>
             <h3 className="text-xl font-semibold mt-1">Verify home details</h3>
-            <p className="mt-2 text-muted-foreground">We pull basic property info from ATTOM and ask you to confirm.</p>
+            <p className="mt-2 text-muted-foreground">
+              We pull basic property info from ATTOM and ask you to confirm.
+            </p>
           </div>
           <div>
             <div className="text-emerald-600 font-semibold">Step 3</div>
-            <h3 className="text-xl font-semibold mt-1">Track and be reminded</h3>
-            <p className="mt-2 text-muted-foreground">Your tracker shows actions and future reminders in one place.</p>
+            <h3 className="text-xl font-semibold mt-1">
+              Track and be reminded
+            </h3>
+            <p className="mt-2 text-muted-foreground">
+              Your tracker shows actions and future reminders in one place.
+            </p>
           </div>
         </div>
       </section>

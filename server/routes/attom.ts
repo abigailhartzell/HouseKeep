@@ -1,5 +1,9 @@
 import type { RequestHandler } from "express";
-import type { AttomLookupRequest, AttomLookupResponse, PropertyDetails } from "@shared/api";
+import type {
+  AttomLookupRequest,
+  AttomLookupResponse,
+  PropertyDetails,
+} from "@shared/api";
 
 /**
  * Attempts to fetch property details (beds/baths) from ATTOM API using the provided address.
@@ -57,7 +61,8 @@ export const attomLookup: RequestHandler = async (req, res) => {
     // Try to extract bedrooms/bathrooms from common ATTOM response shapes
     const first = json?.property?.[0] ?? json?.property ?? json?.[0] ?? json;
     const bds = first?.building?.rooms?.beds ?? first?.summary?.beds ?? null;
-    const bths = first?.building?.rooms?.bathstotal ?? first?.summary?.baths ?? null;
+    const bths =
+      first?.building?.rooms?.bathstotal ?? first?.summary?.baths ?? null;
 
     const details: PropertyDetails = {
       bedrooms: typeof bds === "number" ? bds : null,

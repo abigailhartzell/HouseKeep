@@ -41,8 +41,11 @@ export function useAuth() {
       .filter(Boolean)
       .some((v) => {
         const cleaned = identifier.trim().toLowerCase();
-        if (cleaned.includes("@")) return cleaned === String(p.email).trim().toLowerCase();
-        return cleaned.replace(/\D/g, "") === String(p.phone).replace(/\D/g, "");
+        if (cleaned.includes("@"))
+          return cleaned === String(p.email).trim().toLowerCase();
+        return (
+          cleaned.replace(/\D/g, "") === String(p.phone).replace(/\D/g, "")
+        );
       });
     const passMatch = p.password === password;
     if (idMatch && passMatch) {
@@ -53,5 +56,12 @@ export function useAuth() {
     return false;
   }, []);
 
-  return { authed, login, logout: () => { logout(); setAuthed(false); } };
+  return {
+    authed,
+    login,
+    logout: () => {
+      logout();
+      setAuthed(false);
+    },
+  };
 }
