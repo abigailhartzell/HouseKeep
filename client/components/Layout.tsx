@@ -11,7 +11,7 @@ export default function Layout({ children }: PropsWithChildren) {
       <footer className="border-t">
         <div className="container py-6 text-sm text-muted-foreground flex flex-col md:flex-row items-center justify-between gap-2">
           <p>
-            © {new Date().getFullYear()} HomeGuard. Keeping homes safer, sustainably.
+            © {new Date().getFullYear()} HouseKeep. Keeping homes safer, sustainably.
           </p>
           <p>
             Built with care. Privacy-first. Minimal impact.

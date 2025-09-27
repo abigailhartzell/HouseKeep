@@ -14,7 +14,7 @@ export default function Index() {
               Home safety and prevention, made simple
             </h1>
             <p className="mt-4 text-lg text-muted-foreground max-w-prose">
-              HomeGuard helps you track the safety actions you’ve taken and gently reminds you about upcoming prevention tasks. Minimal, modern, and sustainably designed.
+              HouseKeep helps you track the safety actions you’ve taken and gently reminds you about upcoming prevention tasks. Minimal, modern, and sustainably designed.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button asChild size="lg">
@@ -41,7 +41,7 @@ export default function Index() {
           </div>
           <Card className="md:translate-y-2 bg-gradient-to-br from-emerald-50 to-emerald-100/40 border-emerald-100">
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold">About HomeGuard</h3>
+              <h3 className="text-xl font-semibold">About HouseKeep</h3>
               <p className="mt-2 text-muted-foreground">
                 This app is your companion for a safer home. Track what you’ve done—like testing smoke alarms, cleaning dryer vents, replacing filters—and get reminded when it’s time again.
               </p>
