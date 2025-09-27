@@ -31,8 +31,8 @@ export default function NavBar() {
           </NavLink>
         </nav>
         <div className="flex items-center gap-2">
-          <Button asChild variant="outline" size="sm" className="md:hidden">
-            <Link to="/profile">Profile</Link>
+          <Button asChild variant="outline" size="sm">
+            <Link to="/login">Login</Link>
           </Button>
           <Button asChild size="sm">
             <Link to="/profile">Get Started</Link>

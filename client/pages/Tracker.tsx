@@ -16,6 +16,8 @@ function generateReminders(p: ProfileInput | null): ReminderItem[] {
   return base;
 }
 
+import Protected from "@/components/Protected";
+
 export default function Tracker() {
   const profile = useMemo<ProfileInput | null>(() => {
     try { return JSON.parse(localStorage.getItem("homeguard_profile") || "null"); } catch { return null; }

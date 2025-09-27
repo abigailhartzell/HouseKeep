@@ -12,6 +12,7 @@ import Layout from "@/components/Layout";
 import Profile from "./pages/Profile";
 import Tracker from "./pages/Tracker";
 import Plans from "./pages/Plans";
+import Login from "./pages/Login";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="/profile" element={<Profile />} />
             <Route path="/tracker" element={<Tracker />} />
             <Route path="/plans" element={<Plans />} />
+            <Route path="/login" element={<Login />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

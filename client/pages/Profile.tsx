@@ -111,6 +111,7 @@ export default function Profile() {
 
     setSubmitted(full);
     localStorage.setItem("homeguard_profile", JSON.stringify(full));
+    localStorage.setItem("homeguard_logged_in", "true");
   };
 
   if (submitted) {
